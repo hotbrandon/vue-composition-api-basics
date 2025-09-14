@@ -3,12 +3,16 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
+  <div class="container-2xl mx-auto p-4">
   <nav>
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/about">About</RouterLink>
+    <RouterLink to="/posts">Posts</RouterLink>
+    <RouterLink to="/modals">Modals</RouterLink>
   </nav>
 
   <RouterView />
+  </div>
 </template>
 
 <style scoped>
