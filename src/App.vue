@@ -1,5 +1,11 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import { reactive } from 'vue';
+
+const userData = reactive({
+  userName: 'Jack',
+  userRole: 'admin'
+})
 </script>
 
 <template>
@@ -9,6 +15,7 @@ import { RouterLink, RouterView } from 'vue-router'
     <RouterLink to="/about">About</RouterLink>
     <RouterLink to="/posts">Posts</RouterLink>
     <RouterLink to="/modals">Modals</RouterLink>
+    <div>{{ userData.userName }} | {{ userData.userRole }}</div>
   </nav>
 
   <RouterView />
